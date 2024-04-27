@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Deploy over SSH from circle ci runner
-          command: ssh -o StrictHostKeyChecking=no $SSH_USER@SSH_HOST 'bash /home/ubuntu/hello.sh'
+          command: ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST 'bash /home/ubuntu/hello.sh'
 
 workflows:
   version: 2
