@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Deploy over SSH
+          name: Deploy over SSH from circle ci runner
           command: ssh -o StrictHostKeyChecking=no $SSH_USER@SSH_HOST 'bash /home/ubuntu/hello.sh'
 
 workflows:
